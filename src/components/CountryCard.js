@@ -68,9 +68,11 @@ function CountryCard({item, countries, setCounties}){
         const updateCities = countries.map(item => item.id == newData.id ? newData : item)
         setCounties(updateCities)
         setIsOpenUpdateModul(false)
+        toast.success('Successfully updated country')
     }
     return(
         <>
+            <Toaster position="top-center" reverseOrder={false} />
             <Toaster position="top-center" reverseOrder={false}/>
             <li className="w-[264px] rounded-md bg-white pb-[20px] shadow-lg">
                 <img className="rounded-t-md  object-cover h-[160px] pb-[24px]" src={item.flag} alt="Flag" width={"100%"}/>
