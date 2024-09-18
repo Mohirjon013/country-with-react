@@ -1,7 +1,8 @@
-import Modal from "./Modal"
 
 
-function CountryCard({item,  isOpenModal, setIsOpenModal}){
+
+
+function CountryCard({item}){
     return(
         <>
             <li className="w-[264px] rounded-md bg-white pb-[20px] shadow-lg">
@@ -16,15 +17,6 @@ function CountryCard({item,  isOpenModal, setIsOpenModal}){
                 </div>
                 
             </li>   
-            {/* <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}>
-                <div>
-                    <h2 class = "text-[30px] font-bold text-zinc-600 text-center my-[10px]">Do you want to delete it ?</h2>
-                    <div class = "flex justify-between">
-                        <button className="add-btn w-[49%] py-2 rounded-[30px] bg-amber-500 font-bold text-[25px] leading-[29px] text-white hover:bg-transparent hover:border-amber-500 hover:text-amber-500 border-[2px] border-transparent duration-300">Cancel</button>
-                        <button className="add-btn w-[49%] py-2 rounded-[30px] bg-red-500 font-bold text-[25px] leading-[29px] text-white hover:bg-transparent hover:border-red-500 hover:text-red-500 border-[2px] border-transparent duration-300">Yes</button>
-                    </div>
-                </div>
-            </Modal> */}
         </>
     )
 }

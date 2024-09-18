@@ -31,7 +31,7 @@ function Header({countries, setCounties,setIsLoading, isOpenModal, setIsOpenModa
         setIsOpenModal(true)
         setIsLoading(true)
         setTimeout(() => {
-            toast.success('Successfully toasted!')
+            toast.success('Successfully added country!')
             setIsLoading(false)
             setCounties([data,...countries])
         }, 500);
