@@ -16,7 +16,7 @@ function CountryCard({item,  isOpenModal, setIsOpenModal}){
                 </div>
                 
             </li>   
-            <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}>
+            {/* <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal}>
                 <div>
                     <h2 class = "text-[30px] font-bold text-zinc-600 text-center my-[10px]">Do you want to delete it ?</h2>
                     <div class = "flex justify-between">
@@ -24,7 +24,7 @@ function CountryCard({item,  isOpenModal, setIsOpenModal}){
                         <button className="add-btn w-[49%] py-2 rounded-[30px] bg-red-500 font-bold text-[25px] leading-[29px] text-white hover:bg-transparent hover:border-red-500 hover:text-red-500 border-[2px] border-transparent duration-300">Yes</button>
                     </div>
                 </div>
-            </Modal>
+            </Modal> */}
         </>
     )
 }
