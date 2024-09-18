@@ -2,7 +2,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import './App.css';
 import { useState } from 'react';
-import Cars from './components/Cars/Cars';
+
 
 
 function App() {
@@ -100,10 +100,11 @@ function App() {
   ]
   const [countries, setCounties] = useState(Allcountries)
   const [isLoading, setIsLoading] = useState(false)
+  const [isOpenModal , setIsOpenModal] = useState(false)
   return (
     <>
-      <Header countries={countries} setCounties={setCounties} setIsLoading={setIsLoading} />
-      <Hero Allcountries={Allcountries} countries={countries} setCounties={setCounties} isLoading={isLoading} setIsLoading={setIsLoading} />
+      <Header countries={countries} setCounties={setCounties} setIsLoading={setIsLoading} isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
+      <Hero Allcountries={Allcountries} countries={countries} setCounties={setCounties} isLoading={isLoading} setIsLoading={setIsLoading} isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
     </>
   );
 }

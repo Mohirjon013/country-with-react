@@ -7,8 +7,8 @@ import { Toaster, toast } from "react-hot-toast"
 
 
 
-function Header({countries, setCounties,setIsLoading}){
-    const [isOpenModal , setIsOpenModal] = useState(false)
+function Header({countries, setCounties,setIsLoading, isOpenModal, setIsOpenModal}){
+    
     const [flag, setFlag] = useState(emptyImg)
     const [name, setName] = useState("")
     const [capital, setCapital] = useState("")

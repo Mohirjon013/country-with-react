@@ -1,8 +1,9 @@
 import CountryCard from "../CountryCard"
 import SearchIcon from "../../assets/images/search.svg"
 import loadingIcon from "./../../assets/images/loading.png"
+import CaruselSwiper from "../CaruselSwiper/CaruselSwiper";
 
-function Hero({Allcountries, countries, setCounties,isLoading, setIsLoading}){
+function Hero({Allcountries, countries, setCounties,isLoading, setIsLoading, isOpenModal, setIsOpenModal}){
   
   
   function handleSearchCountry(e){
@@ -49,10 +50,14 @@ function Hero({Allcountries, countries, setCounties,isLoading, setIsLoading}){
               ))}
             </select>
           </div>
-          <ul className="flex flex-wrap justify-between gap-5">
+
+
+          <CaruselSwiper Allcountries={Allcountries}/>
+          
+          <ul className="flex flex-wrap justify-between gap-8">
             { 
               isLoading ? <img className="mx-auto mt-[100px]" src={loadingIcon} width={150}/> :
-              countries.map(item => <CountryCard key={item.id} item={item} /> )
+              countries.map(item => <CountryCard Allcountries={Allcountries} key={item.id} item={item} isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} /> )
             }
           </ul>
         </div>
