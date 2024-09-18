@@ -38,6 +38,7 @@ function Hero({Allcountries, countries, setCounties,isLoading, setIsLoading, isO
     <main>
       <section className="pb-[45px]">
         <div className="containers w-[1250px] mx-auto px-[20px]">
+        <CaruselSwiper Allcountries={Allcountries}/>
           <div className="flex justify-between mb-[48px]">
             <label className="w-[480px] flex items-center shadow-sm bg-white rounded-[10px] "> 
               <img className="ml-[32px]"  src={SearchIcon} alt="search img" width={"18"} height={"18"}/>
@@ -52,7 +53,7 @@ function Hero({Allcountries, countries, setCounties,isLoading, setIsLoading, isO
           </div>
 
 
-          <CaruselSwiper Allcountries={Allcountries}/>
+          
           
           <ul className="flex flex-wrap justify-between gap-8">
             { 
