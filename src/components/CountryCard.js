@@ -12,7 +12,7 @@ function CountryCard({item,  isOpenModal, setIsOpenModal}){
                     <p className="font-[300] text-[14px] leading-[16px] mt-[16px]"> <span className="font-[600] text-[14px] leading-[16px]">Population: </span> {item.population}</p>
                     <p className="font-[300] text-[14px] leading-[16px] my-[8px]"><span className="font-[600] text-[14px] leading-[16px]">Region: </span> {item.name}</p>
                     <p className="font-[300] text-[14px] leading-[16px]"><span className="font-[600] text-[14px] leading-[16px]">Capital: </span> {item.capital}</p>
-                    <button onClick={() => setIsOpenModal(true)} className="w-[80px] bg-red-500 py-2 mt-3 rounded-lg text-white hover:opacity-60 duration-300  ">delete</button>
+                    <button className="w-[80px] bg-red-500 py-2 mt-3 rounded-lg text-white hover:opacity-60 duration-300  ">delete</button>
                 </div>
                 
             </li>   
