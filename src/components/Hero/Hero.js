@@ -57,7 +57,7 @@ function Hero({Allcountries, countries, setCounties,isLoading, setIsLoading, isO
           <ul className="flex flex-wrap justify-between gap-8">
             { 
               isLoading ? <img className="mx-auto mt-[100px]" src={loadingIcon} width={150}/> :
-              countries.map(item => <CountryCard Allcountries={Allcountries} key={item.id} item={item} isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} /> )
+              countries.map(item => <CountryCard countries={countries} setCounties={setCounties} Allcountries={Allcountries} key={item.id} item={item} isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} /> )
             }
           </ul>
         </div>

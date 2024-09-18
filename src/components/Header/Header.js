@@ -49,7 +49,7 @@ function Header({countries, setCounties,setIsLoading, isOpenModal, setIsOpenModa
                 <div className="py-[23px] shadow-lg px-[80px] flex items-center justify-between">
                     <a href="/" className="font-[600] text-[24px] leading-[32px]">Where in the world?</a>
                     <div className="flex gap-3">
-                        <button className="flex gap-[8px] p-1 border-[1px] rounded-md border-black">
+                        <button className="flex gap-[8px] p-1 rounded-md border-[1px] border-transparent hover:border-slate-500 duration-300 hover:text-slate-700 ">
                             <img className="" src={moonIcon} alt="moon icon" width={20} height={20}/>
                             <p className="font-[600] text-[16px] leading-[21px]">Dark Mode</p>
                         </button>
